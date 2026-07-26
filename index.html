@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOPINOTO AKIL</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>☕ KOPINOTO POS</h1>
+
+<div class="card">
+    <h2>Dashboard</h2>
+
+    <div class="dashboard">
+        <div class="box">
+            <div>Total Penjualan</div>
+            <h2 id="uang">Rp0</h2>
+        </div>
+
+        <div class="box">
+            <div>Total Gelas</div>
+            <h2 id="gelas">0</h2>
+        </div>
+    </div>
+</div>
+
+<div class="card">
+    <h2>Stok Ready</h2>
+    <table id="stok"></table>
+</div>
+
+<div class="card">
+    <h2>Transaksi</h2>
+
+    <select id="menu">
+        <option value="0">Kopi Es</option>
+        <option value="1">Americano</option>
+        <option value="2">Lemon Tea</option>
+        <option value="3">Lychee Tea</option>
+    </select>
+
+    <input type="number" id="qty" value="1" min="1">
+
+    <select id="bayar">
+        <option>Cash</option>
+        <option>QRIS</option>
+    </select>
+
+    <button onclick="jual()">Bayar</button>
+</div>
+
+<div class="card">
+    <h2>Riwayat Penjualan</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Jam</th>
+                <th>Menu</th>
+                <th>Qty</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+
+        <tbody id="history"></tbody>
+    </table>
+
+    <button class="reset" onclick="resetRiwayat()">Reset Riwayat</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
