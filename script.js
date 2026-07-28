@@ -1,5 +1,5 @@
 let produk = [
-    {nama:"Kopi Es", harga:15000, stok:48},
+    {nama:"Kopi Es", harga:15000, stok:30},
     {nama:"Americano", harga:15000, stok:2},
     {nama:"Lemon Tea", harga:13000, stok:1},
     {nama:"Lychee Tea", harga:13000, stok:1}
